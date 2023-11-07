@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">loky</string>
+    <string name="marca">Usuario</string>
+    <string name="marca1">Contraseña</string>
+    <string name="iniciar">Iniciar</string>
+    <string name="registrar">Registrar</string>
+    <string name="r_Usuario">Registro Usuario</string>
+    <string name="rNombre">Nombre</string>
+    <string name="rUsuario">Usuario</string>
+    <string name="rContraseña">Contraseña</string>
+    <string name="rEdad">Edad</string>
+    <string name="guardar">Guardar</string>
+</resources>
