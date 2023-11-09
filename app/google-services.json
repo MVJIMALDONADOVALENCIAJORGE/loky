@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "147416958255",
+    "project_id": "loky-713c5",
+    "storage_bucket": "loky-713c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:147416958255:android:b58747906824c06c044dda",
+        "android_client_info": {
+          "package_name": "com.jorge_mauricio.loky"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyE9-MRK9v5Un0J9a-fnVw81K4raY1id0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

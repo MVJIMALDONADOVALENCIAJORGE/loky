@@ -15,30 +15,35 @@
     android:textSize="20sp">
     </TextView>
     <EditText
+        android:id="@+id/r_Name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/rNombre">
     </EditText>
     <EditText
+        android:id="@+id/r_Usuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/rUsuario">
     </EditText>
     <EditText
+        android:id="@+id/r_Password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/rContraseña">
     </EditText>
     <EditText
+        android:id="@+id/r_Edad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/rEdad">
     </EditText>
     <Button
+        android:id="@+id/r_Button"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/guardar">
+        android:text="@string/registrar">
     </Button>
 
 </LinearLayout>

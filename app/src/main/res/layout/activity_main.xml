@@ -30,7 +30,7 @@
         android:layout_height="wrap_content">
     </Button>
     <TextView
-        android:id="@+id/Registar"
+        android:id="@+id/Registrar"
         android:text="@string/registrar"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
