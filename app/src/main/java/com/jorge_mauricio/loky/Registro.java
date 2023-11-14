@@ -3,6 +3,7 @@ package com.jorge_mauricio.loky;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -40,12 +41,13 @@ public class Registro extends AppCompatActivity {
            @Override
            public void onClick(View v) {
 
+
                firestore = FirebaseFirestore.getInstance();
                Map<String, Object> datos = new HashMap<>();
-               datos.put("NOMBRE", Name);
-               datos.put("USUARIO",Usuario);
-               datos.put("PASSWORD",Password);
-               datos.put("EDAD",Edad);
+               datos.put("NOMBRE", Name.getText().toString());
+               datos.put("USUARIO",Usuario.getText().toString());
+               datos.put("PASSWORD",Password.getText().toString());
+               datos.put("EDAD",Edad.getText().toString());
 
                firestore.collection("USUARIOS_TABLA")
                        .add(datos)
@@ -53,7 +55,8 @@ public class Registro extends AppCompatActivity {
                            @Override
                            public void onSuccess(DocumentReference documentReference) {
                                Toast.makeText(getApplicationContext(),"Registrado", Toast.LENGTH_LONG).show();
-
+                               Intent irChat = new Intent(Registro.this, chat.class);
+                                startActivity(irChat);
                            }
                        })
                        .addOnFailureListener(new OnFailureListener() {
@@ -67,4 +70,5 @@ public class Registro extends AppCompatActivity {
        });
 
     }
+
 }
